@@ -1,64 +1,41 @@
-@font-face {
-    font-family: 'aaarghnormal';
-    src: url('fonts/Aaargh-webfont.eot');
-    src: url('fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Aaargh-webfont.woff2') format('woff2'),
-         url('fonts/Aaargh-webfont.woff') format('woff'),
-         url('fonts/Aaargh-webfont.ttf') format('truetype'),
-         url('fonts/Aaargh-webfont.svg#aaarghnormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-h1
-{
-    font-family: 'aaarghnormal';
+h1 {
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: 1.2em;
     color: black;
 }
-.recherch
-{
+
+.recherch{
     color: chartreuse;
     
 }
-.info
-{
-    font-family: 'aaarghnormal';
+.info{
+    font-family: 'Raleway';
     font-size: 0.6em;
     color: black;
     border-radius: 10px;
 }
-.nom_hotel
-{
-    font-family: 'aaarghnormal';
+.nom_hotel{
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: 0.8em;
 }
-.nuit
-{
-    font-family: 'aaarghnormal';
+.nuit{
+    font-family: 'Raleway';
     font-size: 0.2em;
 }
-.en_tete
-{
-    font-family: 'aaarghnormal';
+.en_tete{
+    font-family: 'Raleway';
     font-weight: bold;
 }
-p
-{
-    font-family: 'aaarghnormal';
+p{
+    font-family: 'Raleway';
     font-size: 0.8em;
     color: black;
     border-radius: 10px;
 }
-#conteneur1
-{
+#hebergement-container{
     display: flex;
-    justify-content: space-around;
-}
-#conteneur2
-{
-    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
