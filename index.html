@@ -5,77 +5,91 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-        <img src="images/reservia.svg" alt="logo"/>
+        
     </head>
     <body>
-       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-       <p>En plein centre vile ou en pleine nature</p>
-       
-       <form method="post">  
-         <input type="search" name="recherche"/>
-         <input type="submit" value="Rechercher" />
-        </form>
-        <p>
-         Filtres
-            <input type="submit" value="Économique" />
-            <input type="submit" value="Familial" />
-            <input type="submit" value="Romantique" />
-            <input type="submit" value="Animaux autorisé" />
-        </p>
-        <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
-
-            <p>
-                <p class="en_tete">Hébergement à Marseille</p>
-                <div id="hebergement-container">
-                    <div class="element 1"><img src="images/hebergments/auberge_cannebiere.jpg" width="180" height="100" alt="Auberge_la_Cannebière" id="aub_cannebiere">
-                        <p classe= "nom_hotel">Auberge la Cannebière</p>
-                        <p classe= "nuit">Nuit à partir de 25€</p>
+       <header>
+             <nav>
+                    <img src="images/reservia.svg" alt="logo"/>
+                    <input type="submit" value="Hébergement"/>
+                    <input type="submit" value="Activités"/>
+                    <input type="submit" value="S'inscrire"/>
+             </nav>
+       </header>
+       <main>
+           <article>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre vile ou en pleine nature</p>
+                <form method="post">  
+                    <input type="search" name="recherche"/>
+                    <input type="submit" value="Rechercher" />
+                </form>
+                <p>
+                    Filtres
+                       <input type="submit" value="Économique" />
+                       <input type="submit" value="Familial" />
+                       <input type="submit" value="Romantique" />
+                       <input type="submit" value="Animaux autorisé" />
+                   </p>
+                   <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+                   <section>
+                    <p class="en_tete">Hébergement à Marseille</p>
+                    <div id="hebergement-container">
+                        <div class="element 1"><img src="images/hebergments/auberge_cannebiere.jpg" width="180" height="100" alt="Auberge_la_Cannebière" id="aub_cannebiere">
+                            <p classe= "nom_hotel">Auberge la Cannebière</p>
+                            <p classe= "nuit">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="element 2"><img src="images/hebergments/hotel_port.jpg" width="180" height="100" alt="Hotel_du_port" id="hotel_port">
+                            <p classe= "nom_hotel">Hôtel du port</p>
+                            <p classe= "nuit">Nuit à partir de 52€</p>
+                        </div>
+                        <div class="element 3"><img src="images/hebergments/hotel_mouette.jpg" width="180" height="100" alt="Hotel_les_mouettes" id="hotel_mouettes">
+                            <p classe= "nom_hotel">Hôtel les mouettes</p>
+                            <p classe= "nuit">Nuit à partir de 76€</p>
+                         </div>
+                        <div class="element 4"><img src="images/hebergments/hotel_mer.jpg" width="180" height="100" alt="Hotel_de_la_mer" id="hotel_mer">
+                            <p classe= "nom_hotel">Hôtel de la mer</p>
+                            <p classe= "nuit">Nuit à partir de 46€</p>
+                        </div>
+                        <div class="element 5"><img src="images/hebergments/auberge_panier.jpg" width="180" height="100" alt="Auberge_le_panier" id="aub_panier">
+                            <p classe= "nom_hotel">Auberge le Panier</p>
+                            <p classe= "nuit"> Nuit à partir de 23€</p>
+                        </div>
+                        <div class="element 6"><img src="images/hebergments/hotel_amina.jpg" width="180" height="100" alt="Hotel_chez_Amina" id="hotel_amnia">
+                            <p classe= "nom_hotel">Hôtel chez Amina</p>
+                            <p classe= "nuit"> Nuit à partir de 95€</p>
+                        </div>
                     </div>
-                    <div class="element 2"><img src="images/hebergments/hotel_port.jpg" width="180" height="100" alt="Hotel_du_port" id="hotel_port">
-                        <p classe= "nom_hotel">Hôtel du port</p>
-                        <p classe= "nuit">Nuit à partir de 52€</p>
-                    </div>
-                    <div class="element 3"><img src="images/hebergments/hotel_mouette.jpg" width="180" height="100" alt="Hotel_les_mouettes" id="hotel_mouettes">
-                        <p classe= "nom_hotel">Hôtel les mouettes</p>
-                        <p classe= "nuit">Nuit à partir de 76€</p>
-                     </div>
-                    <div class="element 4"><img src="images/hebergments/hotel_mer.jpg" width="180" height="100" alt="Hotel_de_la_mer" id="hotel_mer">
-                        <p classe= "nom_hotel">Hôtel de la mer</p>
-                        <p classe= "nuit">Nuit à partir de 46€</p>
-                    </div>
-                    <div class="element 5"><img src="images/hebergments/auberge_panier.jpg" width="180" height="100" alt="Auberge_le_panier" id="aub_panier">
-                        <p classe= "nom_hotel">Auberge le Panier</p>
-                        <p classe= "nuit"> Nuit à partir de 23€</p>
-                    </div>
-                    <div class="element 6"><img src="images/hebergments/hotel_amina.jpg" width="180" height="100" alt="Hotel_chez_Amina" id="hotel_amnia">
-                        <p classe= "nom_hotel">Hôtel chez Amina</p>
-                        <p classe= "nuit"> Nuit à partir de 95€</p>
-                    </div>
-                </div>
-                Afficher plus 
-                <p class="en_tete">Activités à Marseille</p>
-
-                <div id="activites-container">
-                    <div class="element 1"><img src="images/activites/vieux_port.jpg" width="180" height="100" alt="vieux_port" id="vieux_port">
-                        <p classe= "nom_activites">Vieux Port</p>
-                    </div>
-                    <div class="element 2"><img src="images/activites/fort_pomegues.jpg" width="180" height="100" alt="fort_de_pomegues" id="fort_pomegues">
-                        <p classe= "nom_activites">Fort de Pomègues</p>
-                    </div>
-                    <div class="element 3"><img src="images/activites/iles_frioul.jpg" width="180" height="100" alt="iles_du_frioul" id="iles_frioul">
-                        <p classe= "nom_activites">Îles du Frioul</p>
-                     </div>
-                    <div class="element 4"><img src="images/activites/parc_calanques.jpg" width="180" height="100" alt="parc_national_des_calanques" id="parc_calanques">
-                        <p classe= "nom_activites">Parc National des Calanques</p>
-                    </div>
-                    <div class="element 5"><img src="images/activites/notre_dame_garde.jpg" width="180" height="100" alt="notre_dame_de_la_garde" id="notre_dame_garde">
-                        <p classe= "nom_activites">Notre-Dame-de-la-Garde</p>
-                    </div>
-                    <div class="element 6"><img src="images/activites/parc_longchamp.jpg" width="180" height="100" alt="parc_longchamp" id="parc_longchamp">
-                        <p classe= "nom_activites">Parc Longchamp</p>
-                    </div>
-                </div>
-            </p>
+                    <p>Afficher plus</p>
+                   </section>
+                   <section>
+                        <p class="en_tete">Activités à Marseille</p>
+                        <div id="activites-container">
+                            <div class="element 1"><img src="images/activites/vieux_port.jpg" width="180" height="100" alt="vieux_port" id="vieux_port">
+                                <p classe= "nom_activites">Vieux Port</p>
+                            </div>
+                            <div class="element 2"><img src="images/activites/fort_pomegues.jpg" width="180" height="100" alt="fort_de_pomegues" id="fort_pomegues">
+                                <p classe= "nom_activites">Fort de Pomègues</p>
+                            </div>
+                            <div class="element 3"><img src="images/activites/iles_frioul.jpg" width="180" height="100" alt="iles_du_frioul" id="iles_frioul">
+                                <p classe= "nom_activites">Îles du Frioul</p>
+                            </div>
+                            <div class="element 4"><img src="images/activites/parc_calanques.jpg" width="180" height="100" alt="parc_national_des_calanques" id="parc_calanques">
+                                <p classe= "nom_activites">Parc National des Calanques</p>
+                            </div>
+                             <div class="element 5"><img src="images/activites/notre_dame_garde.jpg" width="180" height="100" alt="notre_dame_de_la_garde" id="notre_dame_garde">
+                                <p classe= "nom_activites">Notre-Dame-de-la-Garde</p>
+                            </div>
+                            <div class="element 6"><img src="images/activites/parc_longchamp.jpg" width="180" height="100" alt="parc_longchamp" id="parc_longchamp">
+                                <p classe= "nom_activites">Parc Longchamp</p>
+                            </div>
+                        </div>
+                   </section>
+           </article>
+           <aside>
+                <p class="en_tete">Les plus populaires</p>
+           </aside>
+       </main>
     </body>
 </html>
 
