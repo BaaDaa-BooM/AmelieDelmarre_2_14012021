@@ -24,13 +24,10 @@ p {
     color: black;
     border-radius: 10px;
 }
-header{
-    margin-right: 15px;
-}
-nav{
+nav {
     float: right;
 }
-i{
+i {
     color: #0065FC;
 }
 .info {
@@ -39,7 +36,6 @@ i{
     color: black;
     border-radius: 10px;
 }
-
 #hebergement-container {
     float: left;
     display: flex;
@@ -70,6 +66,7 @@ aside {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 30px;
+    margin-top: 20px;
     margin-left: 50px;
     border: 1px solid orange;
 }
