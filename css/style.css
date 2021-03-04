@@ -24,9 +24,14 @@ p {
     color: black;
     border-radius: 10px;
 }
-.recherch {
-    color: chartreuse;
-    
+header{
+    margin-right: 15px;
+}
+nav{
+    float: right;
+}
+i{
+    color: #0065FC;
 }
 .info {
     font-family: 'Raleway';
@@ -34,29 +39,37 @@ p {
     color: black;
     border-radius: 10px;
 }
-/*.nom_hotel {
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: 0.8em;
-}*/
-/*.nuit {
-    font-family: 'Raleway';
-    font-size: 0.4em;
-}*/
+
 #hebergement-container {
+    float: left;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 30%;
-    border: 1px solid red;
+    width: 40%;
+    /*border: 20px solid #F2F2F2;*/
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+aside {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    margin-right: 90px;
+    /*border: 20px solid F2F2F2;*/
+    background-color: #F2F2F2;
+    border-radius: 15px;
 }
 #activites-container {
+    float: left;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding: 30px;
+    margin-left: 50px;
     border: 1px solid orange;
-}
-#populaire-container {
-    display: flex;
-    border: 1px solid purple;
 }
