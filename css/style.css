@@ -1,32 +1,116 @@
 h1{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-weight: bold;
     font-size: 1.2em;
     color: black;
 }
 h2{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-size: 1em;
     font-weight: bold;
 }
 h3{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-size: 0.9em;
     font-weight: bold; 
 }
 h4{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-size: 0.7em;
 }
 p{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-size: 0.8em;
     color: black;
     border-radius: 10px;
 }
-nav{
-    float: right;
+body{
+    font-family: "Raleway";
 }
+head{
+    font-family: "Raleway";
+}
+.header{
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+.headerLogo{
+    grid-area: logo;
+    padding: 0 2rem;
+    height: 2.813rem;
+}
+.headerNav{
+    display: flex;
+    align-items: center;
+    grid-area: navbar;
+}
+.headerNavLien{
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
+.headerNavLien[data-active=true]{
+  color: #0065FC;
+}
+.headerNavLien:hover{
+  color: #0065FC;
+}
+.headerSignup{
+  display: flex;
+  align-items: center;
+  grid-area: button;
+  padding: 2rem;
+  color: #0065FC;
+  font-weight: 600;
+}
+@media screen and (min-width: 601px) {
+    .header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+    .headerNavLien[data-active=true] {
+      border-top: 3px solid #0065FC;
+    }
+    .headerNavLien:hover {
+      border-top: 3px solid #0065FC;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .header {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    .headerimg {
+      order: 0;
+    }
+    .headerSignup {
+      order: 1;
+    }
+    .headerNav {
+      order: 2;
+    }
+    .headerNavLien {
+      border-top: none;
+      border-bottom: 3px solid #F2F2F2;
+      width: 50%;
+    }
+    .headerNavLien[data-active=true] {
+      border-bottom-color: #0065FC;
+    }
+    .headerNavLien:hover {
+      border-bottom-color: #0065FC;
+    }
+  }
+/*nav{
+    display: flex;
+    align-items: center;
+    grid-area: navbar;
+}*/
 i{
     color: #0065FC;
 }
@@ -56,7 +140,7 @@ i{
     border-radius: 10px;
     box-shadow: 1px 1px 12px #555;
     margin-bottom: 40px;
-    /*border: 2px solid black;*/
+    border: 2px solid black;
 }
 #photo_aub_cannebiere, #photo_hotel_port, #photo_hotel_mouette, #photo_hotel_mer, #photo_aub_panier, #photo_hotel_amina{
     border-top-left-radius : 10px;
@@ -64,6 +148,8 @@ i{
     margin-top: 3px;
     margin-left: 3px;
     margin-right: 3px;
+    width: 300px;
+    height: 200px;
 }
 aside{
     float: right;

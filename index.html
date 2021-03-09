@@ -6,15 +6,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4e4dc1ab2c.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            A {text-decoration: none;}
+        </style>
     </head>
     <body>
-       <header>
-           <img src="images/reservia.svg" alt="logo"/>
-             <nav>   
-                        <a href="#hebergement-container">Hébergements</a>
-                        <a href="#activites-container">Activités</a>
-                        <a href="inscription.html">S'inscrire</a>
-             </nav>
+       <header class="header">
+           <img class="headerLogo" src="images/reservia.svg" alt="logo"/>
+                <nav class="headerNav">   
+                    <a class="headerNavLien" href="#hebergement-container" data-active="true">Hébergements</a>
+                    <a class="headerNavLien" href="#activites-container" data-active="false">Activités</a>
+                </nav>
+                <a class="headerSignup" href="">S'inscrire</a>            
        </header>
        <main>
            <article>
@@ -38,47 +41,48 @@
                    </p>
                    <p class="info"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
                    <section>
+                       <!--HEBERGEMENT-->
                         <div id="hebergement-container">
                          <h2 class="en_tete">Hébergement à Marseille</h2>
                             <div id="heberg-photo-container">
                                 <div id="aub_cannebiere">
-                                    <a href="#">
-                                    <img src="images/hebergements/auberge_cannebiere.jpg" width="240" height="160" alt="Auberge la Cannebière" title="Auberge la Cannebière" id="photo_aub_cannebiere">
+                                    <a href="">
+                                    <img src="images/hebergements/auberge_cannebiere.jpg"  alt="Auberge la Cannebière" title="Auberge la Cannebière" id="photo_aub_cannebiere">
                                     <h3>Auberge la Cannebière</h3>
                                     <h4>Nuit à partir de 25€</h4>
                                     </a>
                                 </div>
                                 <div id="hotel_port">
                                     <a href="">
-                                    <img src="images/hebergements/hotel_port.jpg" width="240" height="160" alt="Hotel du port" title="Hotel du port" id="photo_hotel_port">
+                                    <img src="images/hebergements/hotel_port.jpg"  alt="Hotel du port" title="Hotel du port" id="photo_hotel_port">
                                     <h3>Hôtel du port</h3>
                                     <h4>Nuit à partir de 52€</h4>
                                     </a>
                                 </div>
                                 <div id="hotel_mouette">
                                     <a href="">
-                                    <img src="images/hebergements/hotel_mouette.jpg" width="240" height="160" alt="Hotel les mouettes" title="Hotel les mouettes" id="photo_hotel_mouette">
+                                    <img src="images/hebergements/hotel_mouette.jpg"  alt="Hotel les mouettes" title="Hotel les mouettes" id="photo_hotel_mouette">
                                     <h3>Hôtel les mouettes</h3>
                                     <h4>Nuit à partir de 76€</h4>
                                     </a>
                                 </div>
                                 <div id="hotel_mer">
                                     <a href="">
-                                    <img src="images/hebergements/hotel_mer.jpg" width="240" height="160" alt="Hotel de la mer" title="Hotel de la mer" id="photo_hotel_mer">
+                                    <img src="images/hebergements/hotel_mer.jpg"  alt="Hotel de la mer" title="Hotel de la mer" id="photo_hotel_mer">
                                     <h3>Hôtel de la mer</h3>
                                     <h4>Nuit à partir de 46€</h4>
                                     </a>
                                 </div>
                                 <div id="aub_panier">
                                     <a href="">
-                                    <img src="images/hebergements/auberge_panier.jpg" width="240" height="160" alt="Auberge le panier" title="Auberge le panier" id="photo_aub_panier">
+                                    <img src="images/hebergements/auberge_panier.jpg"  alt="Auberge le panier" title="Auberge le panier" id="photo_aub_panier">
                                     <h3>Auberge le Panier</h3>
                                     <h4> Nuit à partir de 23€</h4>
                                     </a>
                                 </div>
                                 <div id="hotel_amina">
                                     <a href="">
-                                    <img src="images/hebergements/hotel_amina.jpg" width="240" height="160" alt="Hotel chez Amina" title="Hotel chez Amina" id="photo_hotel_amina">
+                                    <img src="images/hebergements/hotel_amina.jpg"  alt="Hotel chez Amina" title="Hotel chez Amina" id="photo_hotel_amina">
                                     <h3>Hôtel chez Amina</h3>
                                     <h4> Nuit à partir de 95€</h4>
                                     </a>
