@@ -11,18 +11,7 @@ h1 {
     font-size: 2em;
     margin: .67em 0;
     font-weight: bold;
-    /*font-size: 1.2em;
-    color: black;*/
 }
-/*h2 {
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    /*font-weight: bold;
-}*/
 a {
   text-decoration: none;
 }
@@ -120,6 +109,62 @@ i {
     color: black;
     border-radius: 10px;
 }
+/*DEBUT FILTRE*/
+.filtre_container {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.filtre_container h2 {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.filtre_container div {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
+}
+.filtre_container div:last-child {
+  margin-right: 0;
+}
+.filtre_container div:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.015);
+}
+.filtre_container div div {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+.Icon {
+  color: #0065FC;
+}
+span {
+  margin: 0 1rem;
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    width: 100%;
+  }
+  div {
+    margin-right: 1rem;
+  }
+}
+/*FIN FITLRE*/
 /*DEBUT HEBERGEMENT*/
 .hostingWrapper, .hostingPopular, .hostingMain {
   background-color: #F2F2F2;
@@ -341,22 +386,3 @@ footer {
   }
 }
 /*FIN FOOTER*/
-
-.filters > button {
-  padding: 0px 15px 0px 0px;
-  border: 1px solid grey;
-  border-radius: 30px;
-}
-
-.filters > button > span {
-  font-weight: bold;
-}
-
-.filters > button > i {
-  border-radius: 15px;
-  padding:10px;
-  background-color: blue;
-  color: white;
-  position: relative;
-  right: 5px;
-}
