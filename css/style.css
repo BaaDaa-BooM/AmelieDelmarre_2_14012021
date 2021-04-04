@@ -103,11 +103,52 @@ main {
 i {
     color: #0065FC;
 }
-.info {
-    font-family: 'Raleway';
-    /*font-size: 0.6em;*/
-    color: black;
-    border-radius: 10px;
+
+
+form {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+form span {
+  background-color: #F2F2F2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+form span i {
+  margin-left: 0.1rem;
+}
+input {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+input::placeholder {
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  color: #00000069;
+}
+button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
+button span {
+  background-color: #0065FC;
 }
 /*DEBUT FILTRE*/
 .filtre_container {
@@ -153,8 +194,8 @@ i {
 .Icon {
   color: #0065FC;
 }
-span {
-  margin: 0 1rem;
+.filtre_container div span {
+  margin: 1rem;
 }
 @media screen and (max-width: 650px) {
   h2 {
@@ -162,6 +203,31 @@ span {
   }
   div {
     margin-right: 1rem;
+  }
+  input {
+    flex: 1;
+  }
+  button span {
+    display: none;
+  }
+  .searchFormSubmitinputIcon {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    width: 100%;
+  }
+  div {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  button span {
+    display: block;
+  }
+  .searchFormSubmitinputIcon {
+    display: none !important;
   }
 }
 /*FIN FITLRE*/
@@ -184,7 +250,7 @@ span {
 .hostingMainHeader {
   grid-column: 1/-1;
 }
-.hostingMainHeaderTitle {
+.hosting h2 {
   margin: 0;
 }
 .hostingMainCard {
@@ -221,7 +287,7 @@ h3 {
   font-weight: bold;
 } 
 @media (max-width: 1440px) {
-   {
+  .hosting {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
