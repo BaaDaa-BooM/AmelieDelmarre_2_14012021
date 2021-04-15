@@ -5,6 +5,8 @@ head {
 body {
     font-family: "Raleway", "Sans serif";
     color: black;
+    display: block;
+    margin: auto;
 }
 h1 {
     margin-bottom: 0.5rem;
@@ -12,6 +14,10 @@ h1 {
     margin: .67em 0;
     font-weight: bold;
 }
+strong {
+  font: bold;
+}
+
 a {
   text-decoration: none;
   color : black;
@@ -57,7 +63,7 @@ nav {
   color: #0065FC;
   font-weight: 400;
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
     header {
       grid-template-columns: auto 1fr auto auto;
       grid-template-areas: "logo . navbar button";
@@ -96,16 +102,14 @@ nav {
     }
   }
 main {
-    max-width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 i {
-    color: #0065FC;
+  color: #0065FC;
 }
-
-
 form {
   display: inline-flex;
   max-width: 100%;
@@ -198,7 +202,7 @@ button span {
 .filtre_container div span {
   margin: 1rem;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   h2 {
     width: 100%;
   }
@@ -215,7 +219,7 @@ button span {
     display: block;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   h2 {
     width: 100%;
   }
@@ -223,7 +227,7 @@ button span {
     margin-right: 1rem;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
   button span {
     display: block;
   }
@@ -233,11 +237,6 @@ button span {
 }
 /*FIN FITLRE*/
 /*DEBUT HEBERGEMENT*/
-.hostingWrapper, .container_populaire, .container_hebergement {
-  background-color: #F2F2F2;
-  border-radius: 1.5rem;
-  padding: 2rem;
-}
 .container {
   display: grid;
   column-gap: 2rem;
@@ -247,6 +246,9 @@ button span {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 .container_hebergement h2 {
   grid-column: 1/-1;
@@ -262,7 +264,11 @@ button span {
   box-sizing: border-box;
   height: 100%;
 }
-.container_hebergement article div {
+.note_etoile_hebergement {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+  
+}
+.container_hebergement article > div {
   margin: 0;
 }
 .container_hebergement article img {
@@ -273,16 +279,16 @@ button span {
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-h3 {
+.container_hebergement > h3 {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-.container_hebergement article p {
+.container_hebergement article > p {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-.container_hebergement article div {
+.container_hebergement article > div {
   margin: 0 0 0.25rem 0;
 }
-@media (max-width: 1440px) {
+@media (max-width: 992px) {
   .container {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -297,22 +303,23 @@ h3 {
     grid-column: 1/-1;
   }
 }
-@media (min-width: 925px) {
+@media (min-width: 768px) {
   .container_hebergement {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 925px) and (min-width: 650px) {
+@media (max-width: 768px) and (min-width: 600px) {
   .container_hebergement {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .container_hebergement {
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;*/
+    background: white;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .container_populaire {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
@@ -324,6 +331,9 @@ h3 {
   row-gap: 2rem;
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 h2 {
   margin: 0;
@@ -351,11 +361,11 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
-.box p {
+.box h3, p{
   margin: 0 0.75rem 0.25rem 0.75rem;
   margin-top: 5px;
 }
-.note_etoile {
+.note_etoile_populaire {
   margin: 0 0.75rem 0.25rem 0.75rem;
   margin-top: auto;
 }
@@ -363,7 +373,6 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-
 /*DEBUT ACTIVITE*/
 .activite {
   display: grid;
@@ -395,7 +404,7 @@ h2 {
   margin: 1.2rem 1.5rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .activite {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
@@ -425,21 +434,21 @@ h2 {
     grid-row: 4/7;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   .activite {
     row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 12rem 12rem;
   }
 }
-@media (max-width: 925px) {
+@media (max-width: 768px) {
   .activite {
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 12rem 12rem 12rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .activite {
     row-gap: 2rem;
     grid-template-columns: 1fr;
@@ -452,7 +461,7 @@ footer {
   background-color: #F2F2F2;
   width: 100%;
 }
-.pied_de_page {
+footer > div {
   display: flex;
   max-width: 100%;
   width: 1440px;
@@ -460,29 +469,29 @@ footer {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-.pied_de_page_colonne {
+footer > div > div {
   width: 30%;
   padding: 2rem 2rem;
 }
-.pied_de_page_colonne a {
+footer a {
   display: block;
   margin: 1rem 0;
 }
 
 @media (max-width: 750px) {
-  .pied_de_page {
+  footer > div {
     flex-direction: column;
     padding: 2rem;
   }
-  .pied_de_page_colonne {
+  footer > div > div {
     width: 100%;
     padding: 0;
     margin: 1rem 0;
   }
-  .pied_de_page_colonne:first-child {
+  footer > div > div:first-child {
     margin-top: 0;
   }
-  .pied_de_page_colonne:last-child {
+  footer > div > div:last-child {
     margin-bottom: 0;
   }
   h3 {
@@ -493,3 +502,50 @@ footer {
   }
 }
 /*FIN FOOTER*/
+
+/*VERSION MOBILE*/
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  header {
+    margin: 0;
+    flex-direction: column;
+  }
+  /*POPULAIRE*/
+  .container_populaire {
+    border-radius: 0;
+    padding: 40px 20px 30px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+  .box{
+    height: 145px;
+    margin-bottom: 10px;
+  }
+
+  .container_populaire > i{
+    font-size: 1.4rem;
+  }
+
+  .container_populaire > h3{
+    font-size: 1rem !important;
+  }
+
+  .hostingPopularWrapcontentContent > p{
+    font-size: .9rem;
+  }
+
+  .hostingPopularWrapcontentContent{
+    padding: 15px 10px 10px 20px;
+  }
+
+  .note_etoile_hebergement{
+    font-size: .8rem !important;
+    letter-spacing: 1px;
+  }
+}
